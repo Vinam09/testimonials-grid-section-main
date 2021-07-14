@@ -1,0 +1,161 @@
+/* Font
+font-family: 'Barlow Semi Condensed', sans-serif;
+ */
+
+ /* Colors
+ Moderate violet: hsl(263, 55%, 52%)
+ Very dark grayish blue: hsl(217, 19%, 35%)
+ Very dark blackish blue: hsl(219, 29%, 14%)
+ White: hsl(0, 0%, 100%)
+
+ Light gray: hsl(0, 0%, 81%)
+ Light grayish blue: hsl(210, 46%, 95%)
+  */
+
+body{
+  margin: 0;
+  font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
+}
+
+img{
+  border-radius: 50px;
+  max-height: 2rem;
+}
+
+h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+h3{
+
+  margin: 0 1rem;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+h4{
+  margin: 0 1rem;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+p{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: .9rem;
+  line-height: 1.4;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.hero-container{
+
+  margin: 8vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-row:  repeat(2, auto);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+
+.colored h2{
+  color: hsl(0, 0%, 100%);
+}
+.colored h3{
+  color: hsl(0, 0%, 100%);
+}
+.colored h4{
+  color: hsla(0, 0%, 100%,0.5);
+}
+.colored p{
+  color: hsla(0, 0%, 100%,0.7);
+}
+
+
+
+.white{
+  box-shadow: 1px 5px 12px hsl(0, 0%, 81%);
+}
+.white h2{
+  color: hsl(219, 29%, 14%);
+}
+.white h3{
+  color: hsl(219, 29%, 14%);
+}
+.white h4{
+  color: hsla(219, 29%, 14%,0.5);
+}
+.white p{
+  color: hsla(219, 29%, 14%,0.7);
+}
+
+
+
+.daniel-container{
+
+  padding: 3em;
+  grid-column: 1 / 3;
+  background-color: hsl(263, 55%, 52%);
+  background-image: url("images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 80% 0%;
+  border-radius: 10px;
+}
+.daniel-image > img{
+  border-style: solid;
+  border-color: hsla(263, 89%, 81%);
+}
+
+.jonathan-container{
+
+  padding: 3em;
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 10px;
+  grid-column: 3 / 4;
+}
+
+.kira-container{
+  padding: 3em;
+
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
+}
+
+.jeanette-container{
+
+  padding: 3em;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  grid-row: 2 / 3;
+}
+.patrick-container{
+
+  padding: 3em;
+  background-color: hsl(219, 29%, 14%);
+  border-radius: 10px;
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+.patrick-image > img{
+  border-style: solid;
+  border-color: hsl(263, 55%, 52%);
+}
+
+
+
+.name{
+  display: flex;
+  flex-direction: row;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width: 1200px) {
+  .hero-container{
+    margin: 10vw 5vw;
+    display: flex;
+    flex-direction: column;
+  }
+}
